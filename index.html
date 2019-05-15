@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<link rel = "stylesheet" type = "text/css" href = "styles.css" />
+<link rel = "stylesheet" type = "text/css" href = "https://static.parastorage.com/services/third-party/fonts/Helvetica/fontFace.css" />
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300|Sancreek|Raleway:100'
+rel='stylesheet' type='text/css' />
+<body>
+
+<div class = "container">
+    <div class="flip-card-inner">
+        <div class="flip-card-front">
+            <h2>Ethyl Chan</h2>
+        </div>
+        <div class="flip-card-back">
+            <div class = "column1">
+                <div id="overlay">
+                    <div class="overlay-content">
+                        <div class="tabs">
+                        <ul class="overlaylinks">
+                        <li class="active"><a href="#tab1"><i class="fa fa-user"></i> About Me</a></li>
+                        <li><a href="#tab2"><i class="fa fa-globe"></i> resume</a></li>
+                        <li><a href="#tab3"><i class="fa fa-question"></i> contact</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+            <img src ='av.PNG' style ="width:85%;border-top: 65px solid transparent;border-left: 35px solid transparent ">
+            </div>
+            <div class = "column2">
+                <div class="tabs">
+            
+                    <div id="tab1" class="tabformat">
+                        <h1>About Me:</h1>
+                            <p>I'm a 21 year old girl with a Computer Science major</p>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus purus risus, a feugiat justo iaculis eget. Cras lobortis feugiat cursus. Mauris laoreet, neque vitae venenatis efficitur, leo augue gravida risus, ut mollis risus tellus quis dui. Morbi pharetra fringilla placerat. Cras luctus dolor ac massa tincidunt, eu ullamcorper augue feugiat. In at dui aliquam, finibus tortor sed, accumsan mauris. Nullam interdum scelerisque risus. Nunc vehicula justo nec orci mattis faucibus. Quisque laoreet nulla magna, eu ullamcorper eros ultrices non. Sed eget purus dolor. Vivamus ut ullamcorper lectus, eu posuere ante.</p>
+                    </div>
+
+                    <div id="tab2" class="tabformat">
+                            <h1>frequently asked questions.</h1>
+                        
+                                <h3>here's a question??</h3>
+                                <p>Nam dapibus euismod vehicula. Vestibulum luctus non turpis ut cursus. Vivamus at purus sit amet ipsum laoreet convallis. Donec aliquet elit at purus iaculis, eget auctor lacus vestibulum. Phasellus nec lobortis lectus, eget ultrices quam. In ultrices magna eu viverra vulputate. Curabitur ante mi, dictum quis blandit ac, faucibus id turpis. Sed pellentesque purus ipsum, at malesuada enim facilisis nec. Cras purus neque, ullamcorper eget dictum eget, consequat a quam. Nulla facilisi. Mauris vitae nibh sit amet ante condimentum tincidunt ut id lacus. Nullam aliquam augue erat, hendrerit pretium mauris molestie eget. Morbi sit amet blandit sapien, a fringilla lorem.</p>
+                                <h3>wow another question??</h3>
+                                <p>yeah, dude. and here's another answer</p>
+                                <h3>lmao idk anymore guys??</h3>
+                                <p>Donec tristique diam arcu, et posuere nibh suscipit eget. Duis id nisl non elit auctor mattis. Curabitur finibus at mauris nec porttitor. Aliquam non lacinia sapien, a blandit lacus. Aenean dolor velit, aliquam lacinia tristique et, scelerisque in nibh. Vivamus maximus finibus mi quis efficitur. Maecenas sit amet lorem sit amet sem viverra egestas ac sit amet ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus sapien libero, suscipit quis vestibulum quis, sodales at purus. Aenean vel viverra ipsum. Praesent accumsan lectus eget hendrerit maximus. Aliquam sed urna nisl. Fusce vehicula convallis mollis. Quisque vulputate nisl tortor, viverra suscipit nisi bibendum vel.</p>
+                    </div>
+
+                    <div id="tab3" class="tabformat">
+                        <br><br>
+                        <p> <b>Phone:</b><br>
+                            (647)-608-3923<br><br>
+                            
+                            <b>Email:</b><br>
+                            ethylchan@yahoo.ca <br><br>
+                            
+                            <b>Address:</b><br>
+                            130 Bur Oak Avenue,<br>
+                            Markham,ON<br><br>
+                            
+                            <b>Date of Birth:</b><br>
+                            September 7th, 1997</p>
+                    </div>
+            
+                </div>
+
+            </div>  
+
+
+
+        </div>
+    </div>
+</div>
+
+
+
+<!----
+<div id = "particles-js"></div>
+<script src = "particles.js"></script>
+<script src = "app.js"></script>   
+---->
+
+
+
+<script src = "tabs.js"></script>
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+ 
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+<script>
+        $(document).ready(function() {
+            $('.tabs .overlaylinks a').on('click', function(e)  {
+                var currentAttrValue = $(this).attr('href');
+         
+                // Show/Hide Tabs
+                $('.tabs ' + currentAttrValue).fadeIn(800).siblings().hide();
+         
+                // Change/remove current tab to active
+                $(this).parent('li').addClass('active').siblings().removeClass('active');
+         
+                e.preventDefault();
+            });
+        });
+        </script>
+
+</body>
+</html>
