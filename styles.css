@@ -1,0 +1,268 @@
+body {
+  /*
+  background-color: #041243;
+  background-image:url("https://images.unsplash.com/photo-1477554193778-9562c28588c0?auto=format&fit=crop&w=1500&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  background-image:linear-gradient(to bottom, #0e1744, #2943c6);
+  */
+
+  background-image:url("https://i.pinimg.com/originals/0c/76/87/0c7687d079c8b42e1ced4145c2644c39.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+  font-family:'Helvetica Neue Ultralight','raleway', Arial, sans-serif;
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  margin: 0;
+  background-attachment: fixed;
+  background-size:cover;
+  letter-spacing:1px;
+  /*text-shadow: 2px 2px #000000;*/
+}
+h1 {
+  color: white;
+  font-weight: lighter;
+  font-style: italic;
+  font-size: 30px;
+  padding-bottom: 5px;
+}
+p {
+  color: white;
+  padding-left:20px;
+  font-size: 18px;
+}
+
+h2{
+  color: white;
+  padding-top: 120px;
+  font-weight: lighter;
+  font-size: 55px;
+  letter-spacing: 15px;
+  text-transform: lowercase;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  display:none;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  display:none;
+}
+
+::-webkit-scrollbar {
+  display:none;
+}
+
+.container{
+  background:transparent;
+  color: white;
+  border:none;
+  width:800px;
+  height:400px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.container:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: rgba(58, 57, 57, 0.8);
+  color: black;
+  border:2px solid #fff;
+  background-clip: padding-box;
+  box-shadow: 5px 5px 30px #000000;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background: rgba(58, 57, 57, 0.8);
+  color: white;
+  transform: rotateY(180deg);
+  box-shadow: 5px 5px 30px #000000;
+  border:1px solid #fff;
+}
+
+.column1 {
+  float: left;
+  width: 40%;
+ height:400px;
+}
+
+.column2 {
+  float: right;
+  width: 60%;
+  
+  /*background: rgba(204, 204, 204, 0.7);*/
+  height:400px;
+  overflow:hidden;
+}
+
+
+#overlay{
+  position:absolute;
+  width:33.95%;
+  height:68%;
+  opacity:0;
+  margin-top:65px;
+  margin-left: 42px;
+  background-color: rgba(0,0,0,.6);
+  -webkit-filter:blur(3px);
+  transition: all 0.9s ease-out;
+  -o-transition-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+}
+
+#overlay:hover{
+  opacity: 1;
+  -webkit-filter:blur(0px);
+  transition: all 0.9s ease-out;
+  -o-transition-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+}
+
+.overlay-content {
+  position: relative;
+  margin-top:30px;
+  margin-left:-20px;
+
+}
+
+.overlaylinks {
+  position:relative;
+  margin:0 auto;
+  width:280px;
+  margin-left:-28px;
+}
+
+.overlaylinks a {
+  text-transform:uppercase;
+  letter-spacing:1px;
+  margin:3px;
+  width:auto;
+  padding: 20px;
+  padding-bottom: 1px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #ffffff;
+  display: inline-block; 
+  transition: 0.6s;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.overlaylinks a:hover {
+  color: #96f796
+}
+
+.overlaylinks ul{
+  list-style:none;
+  margin-left:0px;
+  padding-left:0px;
+}
+
+.overlaylinks li{
+  list-style:none;
+  line-height:40px;
+  margin-left:0px;
+  padding-left:0px;
+}
+
+.overlaylinks:after {
+  display:block;
+  clear:both;
+  content:'';
+}
+
+li.active a, li.active a:hover{
+  padding-left:20px;
+  color:#ff9999;
+}
+
+a {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+}
+
+a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: -5px;
+  left: 0;
+  background-color: #96f796;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+#particles-js{
+  background-image:linear-gradient(to bottom, #0e1744, #2943c6);
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position:center;
+  background-attachment: fixed;
+}
+
+.tabs {
+  display:inline-block;
+}
+.tabformat{
+  margin:0px;
+  padding:20px;
+  line-height:20px;
+  height:365px;
+  width: 420px;
+  overflow: auto;
+  text-align: left;
+  -ms-overflow-style: none;
+}
+
