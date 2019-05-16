@@ -6,6 +6,9 @@ body {
   -o-background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  -webkit-background-attachment: fixed;
+  -moz-background-attachment: fixed;
+  -o-background-attachment: fixed;
   
   font-family:'Helvetica Neue Ultralight','raleway', Arial, sans-serif;
   align-items: center;
