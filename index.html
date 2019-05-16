@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html>
+<head>
 <link rel = "stylesheet" type = "text/css" href = "/css/styles.css" />
 <link rel = "stylesheet" type = "text/css" href = "https://static.parastorage.com/services/third-party/fonts/Helvetica/fontFace.css" />
 
 <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300|Sancreek|Raleway:100'
 rel='stylesheet' type='text/css' />
+<title>Ethyl Chan</title>
+</head>
 <body>
 
 <div class = "container">
     <div class="flip-card-inner">
         <div class="flip-card-front">
             <h2>Ethyl Chan</h2>
+            <h3><span> Click here </span></h3>
         </div>
         <div class="flip-card-back">
             <div class = "column1">
@@ -32,9 +36,13 @@ rel='stylesheet' type='text/css' />
             
                     <div id="tab1" class="tabformat">
                         <h1>About Me:</h1>
-                            <p>I'm a 21 year old girl with a Computer Science major</p>
+                            <p>I'm 21 years old and recently graduated from Wilfrid Laurier University with a Computer Science degree.</p>
 
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus purus risus, a feugiat justo iaculis eget. Cras lobortis feugiat cursus. Mauris laoreet, neque vitae venenatis efficitur, leo augue gravida risus, ut mollis risus tellus quis dui. Morbi pharetra fringilla placerat. Cras luctus dolor ac massa tincidunt, eu ullamcorper augue feugiat. In at dui aliquam, finibus tortor sed, accumsan mauris. Nullam interdum scelerisque risus. Nunc vehicula justo nec orci mattis faucibus. Quisque laoreet nulla magna, eu ullamcorper eros ultrices non. Sed eget purus dolor. Vivamus ut ullamcorper lectus, eu posuere ante.</p>
+                            <p>I've always had a keen interest in video games, and puzzle solving which was what fueled my interest in programming.
+                                Other than programming, I also have a passion for graphic design, music, traveling, anime and horror movies.
+                                I am always eager to learn, and open to experiment with new things. 
+                            </p>
+                            <p>Hover over my face for more!</p>
                     </div>
 
                     <div id="tab2" class="tabformat">
@@ -65,11 +73,7 @@ rel='stylesheet' type='text/css' />
                     </div>
             
                 </div>
-
-            </div>  
-
-
-
+            </div>
         </div>
     </div>
 </div>
@@ -92,20 +96,28 @@ rel='stylesheet' type='text/css' />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
 
 <script>
-        $(document).ready(function() {
-            $('.tabs .overlaylinks a').on('click', function(e)  {
-                var currentAttrValue = $(this).attr('href');
-         
-                // Show/Hide Tabs
-                $('.tabs ' + currentAttrValue).fadeIn(800).siblings().hide();
-         
-                // Change/remove current tab to active
-                $(this).parent('li').addClass('active').siblings().removeClass('active');
-         
-                e.preventDefault();
-            });
+    $(document).ready(function() {
+        $('.tabs .overlaylinks a').on('click', function(e)  {
+            var currentAttrValue = $(this).attr('href');
+        
+            // Show/Hide Tabs
+            $('.tabs ' + currentAttrValue).fadeIn(800).siblings().hide();
+        
+            // Change/remove current tab to active
+            $(this).parent('li').addClass('active').siblings().removeClass('active');
+        
+            e.preventDefault();
         });
-        </script>
+    });
+
+
+    $('.container').click(function(){
+    $(this).find('.flip-card-inner').addClass('flipped').mouseleave(function(){
+        $(this).removeClass('flipped');
+    });
+    return true;
+    });
+</script>
 
 </body>
 </html>
