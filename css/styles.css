@@ -1,3 +1,6 @@
+html{
+  height:100%;
+}
 body {
   background-image:url("https://i.pinimg.com/originals/0c/76/87/0c7687d079c8b42e1ced4145c2644c39.jpg");
   background-size: cover;
