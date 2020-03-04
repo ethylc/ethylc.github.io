@@ -1,7 +1,12 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel = "stylesheet" type = "text/css" href = "/css/styles.css" />
+<link rel="stylesheet" href="css/bootstrap.css">
+
+<script src = "js/smoothScroll.js"></script>
 <link rel = "stylesheet" type = "text/css" href = "https://static.parastorage.com/services/third-party/fonts/Helvetica/fontFace.css" />
 
 <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300|Sancreek|Raleway:100'
@@ -10,137 +15,82 @@ rel='stylesheet' type='text/css' />
 </head>
 <body>
 
-<div class = "container">
-    <div class="flip-card-inner">
-        <div class="flip-card-front">
+<div id="section1">
+    <div class = "container1">
+        <div class="intro">
             <h2>Ethyl Chan</h2>
-            <h3><span> Click here </span></h3>
-        </div>
-        <div class="flip-card-back">
-            <div class = "column1">
-                <div id="overlay">
-                    <div class="overlay-content">
-                        <div class="tabs">
-                        <ul class="overlaylinks">
-                        <li class="active"><a href="#tab1"><i class="fa fa-user"></i> About Me</a></li>
-                        <li><a href="#tab2"><i class="fa fa-globe"></i> resume</a></li>
-                        <li><a href="#tab3"><i class="fa fa-question"></i> contact</a></li>
-                        </ul>
-                    </div>
-                    </div>
-                </div>
-            <img src ='/images/peace.jpg' style ="width:85%;border-top: 65px solid transparent;border-left: 35px solid transparent ">
-            </div>
-            <div class = "column2">
-                <div class="tabs">
-            
-                    <div id="tab1" class="tabformat">
-                        <h1>About Me:</h1>
-                            <p>I'm 21 years old and recently graduated from Wilfrid Laurier University with a Computer Science degree.</p>
-
-                            <p>I've always had a keen interest in video games, and puzzle solving which was what fueled my interest in programming.
-                                Other than programming, I also have a passion for graphic design, music, traveling, anime and horror movies.
-                                I am always eager to learn, and open to experiment with new things. 
-                            </p>
-                            <p>Hover over the hamster for more!</p>
-                    </div>
-
-                    <div id="tab2" class="tabformat">
-                        <h2 style ="margin-top:-80px;">Education</h2>
-                            <h3>Wilfrid Laurier University<br>
-                                2015 - 2019</h3>
-                            <p>Honours Computer Science, BSc</p>
-                        <h2 style ="margin-top:-80px;">Experience</h2>
-                            <h3>ACECGT Group</h3>
-                            <h4>VBA Developer Intern &nbsp &nbsp &nbsp &nbsp May – Aug 2018</h4>
-                            <p>• Developed macros for accounting and financial purposes<br>
-                                • Developed macros that generates management reports and simplifies work scheduling with user friendly GUI<br>
-                                • Developed macros for the sales team that makes data entry and removal of data redundancy quick and efficient</p>
-                        <br>
-                            <h3>AIESEC Laurier</h3>
-                            <h4>Exchange Participant Manager &nbsp &nbsp &nbsp &nbsp Jan – Dec 2017</h4>
-                            <p>• Had one-on-one consultations with students that were interested in going on exchange<br>
-                                • Responsible for assisting and supporting exchange participants throughout the exchange process<br>
-                                • Ensure that the participants are comfortable during exchange</p>
-                        <br>
-                            <h3>Kids Summer Institute</h3>
-                            <h4>Camp Counsellor &nbsp &nbsp &nbsp &nbsp July – Aug 2013</h4>
-                            <p>• Taught kids how to use video camera equipment as well as edit their own videos<br>
-                                • Introduced kids to the LEGO Mindstorm technology program</p>
-                        <h2 style ="margin-top:-80px;">Projects</h2>
-                            <h3>Mall Map [Java]</h3>
-                                <p>• An Android app that allows users to choose from a list of malls and displays their stores<br>
-                                    • Two stores can be selected and a path to the store(s) will be displayed on Google maps<br>
-                                    • Implemented using Google API and SQLite database</p>
-                            <br>
-                                <h3>Mountain Skyline [C++]</h3>
-                                <p>• 3D landscape simulation created using OpenGL<br>
-                                    • User can move the camera or rotate the landscape to view it from different angles</p>
-                            <br>
-                                <h3>Study Space Finder [HTML/CSS]</h3>
-                                <p>• Web-based application that allows students in any university to post and find study group locations on campus<br>
-                                    • Designed the UI and implemented the mock up<br>
-                                    • Worked closely with other teams to plan, review and develop the front-end of the website</p>
-                        <h2 style ="margin-top:-80px;">Languages</h2>
-                            <h3>• English</h3><br>
-                            <h3>• Cantonese</h3>
-                    </div>
-
-                    <div id="tab3" class="tabformat">
-                        <br><br>
-                        <p> <b>Phone:</b><br>
-                            (647)-608-3923<br><br>
-                            
-                            <b>Email:</b><br>
-                            ethylchan@yahoo.ca <br><br></p>
-                    </div>
-            
-                </div>
-            </div>
+            <hr width="48%;" color="white">
+                <nav class = "navbar navbar-dark navbar-expand-lg">
+                    <ul class = "nav navbar-nav mx-auto">
+                        <li class = "nav-item mr-2 ml-2"><button class = "nav-link" onclick="scrollAbout()">about me</button></li>
+                        <li class = "nav-item mr-2 ml-2"><a class = "nav-link" href="/images/Ethyl_resume.pdf" target="_blank">resume</a></li>
+                        <!-- <li class = "nav-item mr-2 ml-2"><button class = "nav-link" onclick="scrollWork()">portfolio</button></li> -->
+                        <li class = "nav-item mr-2 ml-2"><button class = "nav-link" onclick="scrollContact()">contact</button></li>
+                    </ul>
+                </nav>
         </div>
     </div>
 </div>
 
+<div id = "section2">
+    <div class="about">
+        <h2>About Me</h2>
+        <p>I'm 22 years old and recently graduated from Wilfrid Laurier University with a Computer Science degree.</p>
+
+        <p>I've always had a keen interest in video games, and puzzle solving which was what fueled my interest in programming.
+            Other than programming, I also have a passion for graphic design, music, traveling, anime and horror movies.
+            I am always eager to learn and experiment with new things. </p>
+            <hr width="48%;" color="white">
+            <nav class = "navbar navbar-dark navbar-expand-lg">
+                <ul class = "nav navbar-nav mx-auto">
+                    <li class = "nav-item mr-2 ml-2"><button class = "nav-link" onclick="scrollHome()">home</button></li>
+                    <li class = "nav-item mr-2 ml-2"><a class = "nav-link" href="/images/Ethyl_resume.pdf" target="_blank">resume</a></li>
+                    <!-- <li class = "nav-item mr-2 ml-2"><button class = "nav-link" onclick="scrollWork()">portfolio</button></li> -->
+                    <li class = "nav-item mr-2 ml-2"><button class = "nav-link" onclick="scrollContact()">contact</button></li>
+                </ul>
+            </nav>
+    </div>
+</div>
+
+<!-- <div id = "section3">
+    <div class="container1">
+        <nav class = "navbar navbar-dark navbar-expand-lg">
+            <ul class = "nav navbar-nav mx-auto">
+                <li class = "nav-item mr-2 ml-2"><button class = "nav-link" onclick="scrollHome()">home</button></li>
+                <li class = "nav-item mr-2 ml-2"><a class = "nav-link" href="/images/Ethyl_resume.pdf" target="_blank">resume</a></li>
+                <li class = "nav-item mr-2 ml-2"><button class = "nav-link" onclick="scrollAbout()">about</button></li>
+                <li class = "nav-item mr-2 ml-2"><button class = "nav-link" onclick="scrollContact()">contact</button></li>
+            </ul>
+        </nav>
+    </div>
+</div> -->
+
+<div id = "section4">
+    <div class="container2">
+        <div class="contact">
+        <p> 
+            <a class = "linkIcon" href="https://www.linkedin.com/in/ethyl-chan/"><i class="fa fa-linkedin"></i></a> &nbsp;&nbsp;
+            <a class="linkIcon" href="https://github.com/ethylc"><i class="fa fa-github"></i></a><br><br>
+            <i class="fa fa-phone"></i>  &nbsp; (647)-608-3923<br><br>
+            <i class="fa fa-envelope"></i> &nbsp; ethylchan@yahoo.ca
+
+        </p>
+        <hr width="48%;" color="white">
+        <nav class = "navbar navbar-dark navbar-expand-lg">
+            <ul class = "nav navbar-nav mx-auto">
+                <li class = "nav-item mr-2 ml-2"><button class = "nav-link" onclick="scrollHome()">home</button></li>
+                <li class = "nav-item mr-2 ml-2"><button class = "nav-link" onclick="scrollAbout()">about</button></li>
+                <li class = "nav-item mr-2 ml-2"><a class = "nav-link" href="/images/Ethyl_resume.pdf" target="_blank">resume</a></li>
+                <!-- <li class = "nav-item mr-2 ml-2"><button class = "nav-link" onclick="scrollWork()">portfolio</button></li> -->
+            </ul>
+        </nav>
+    </div>
+    </div>
+</div>
 
 
-<!----
-<div id = "particles-js"></div>
-<script src = "particles.js"></script>
-<script src = "app.js"></script>   
----->
-
-
-
-<script src = "tabs.js"></script>
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
  
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
- 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-
-<script>
-    $(document).ready(function() {
-        $('.tabs .overlaylinks a').on('click', function(e)  {
-            var currentAttrValue = $(this).attr('href');
-        
-            // Show/Hide Tabs
-            $('.tabs ' + currentAttrValue).fadeIn(800).siblings().hide();
-        
-            // Change/remove current tab to active
-            $(this).parent('li').addClass('active').siblings().removeClass('active');
-        
-            e.preventDefault();
-        });
-    });
-
-
-    $('.container').click(function(){
-    $(this).find('.flip-card-inner').addClass('flipped').mouseleave(function(){
-        $(this).removeClass('flipped');
-    });
-    return true;
-    });
-</script>
 
 </body>
 </html>

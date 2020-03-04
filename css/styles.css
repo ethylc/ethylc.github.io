@@ -1,39 +1,28 @@
 html{
   height:100%;
+  overflow: hidden;
+  scroll-behavior: smooth;
 }
 body {
-  background-image:url("https://i.pinimg.com/originals/0c/76/87/0c7687d079c8b42e1ced4145c2644c39.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  
-  font-family:'Helvetica Neue Ultralight','raleway', Arial, sans-serif;
-  /* align-items: center; */
-  /* display: flex; */
+  font-family:'Helvetica Neue Ultralight','raleway', Arial, sans-serif !important;
   height: 100%;
-  /* justify-content: center; */
   margin: 0;
   letter-spacing:1px;
-  /*text-shadow: 2px 2px #000000;*/
 }
 h1 {
-  color: white;
   font-weight: lighter;
   font-style: italic;
   font-size: 30px;
   padding-bottom: 5px;
 }
 p {
-  color: white;
-  padding-left:20px;
   font-size: 18px;
 }
 
 h2{
-  color: white;
-  padding-top: 110px;
   font-weight: lighter;
-  font-size: 55px;
+  margin-bottom:1%;
+  font-size: 55px !important;
   letter-spacing: 15px;
   text-transform: lowercase;
 }
@@ -44,10 +33,34 @@ h3 {
   font-weight: lighter;
   margin-top:-25px;
 }
-span:after,
-span:before{
-  content:"\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0";
-  text-decoration:line-through;
+
+.intro{
+  margin-top:15%;
+  margin-bottom:15%;
+  height: auto;
+  width: 100%;
+  position: relative;
+  display: block;
+}
+
+.contact{
+  margin-top:8%;
+  margin-bottom:8%;
+  height: auto;
+  width: 100%;
+  position: relative;
+  display: block;
+  color: white;
+}
+
+.about{
+  margin:auto;
+  padding-top: 12%;
+  height: auto;
+  width: 50%;
+  overflow: scroll;
+  letter-spacing: 1px;
+  color: white;
 }
 
 ::-webkit-scrollbar-thumb:vertical {
@@ -62,161 +75,73 @@ span:before{
   display:none;
 }
 
-.container{
+.container1{
   background:transparent;
   color: white;
   border:none;
-  width:800px;
-  height:400px;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
-}
-
-/* This container is needed to position the front and back side */
-.flip-card-inner {
+  width:54%;
+  height:auto;
   position: relative;
-  width: 100%;
-  height: 100%;
+  top: 25%;
+  left: 25%;
+  margin-right: -50%;
   text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.container .flip-card-inner.flipped {
-  transform: rotateY(180deg);
-
-}
-
-/* Position the front and back side */
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden ;
-  -moz-backface-visibility: hidden ;
-  -o-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-  transform: rotateX(0deg);
-}
-
-/* Style the front side (fallback if image is missing) */
-.flip-card-front {
+  /* transform: translate(-50%, -50%); */
   background-color: rgba(58, 57, 57, 0.8);
-  color: black;
   border:2px solid #fff;
   background-clip: padding-box;
   box-shadow: 5px 5px 30px #000000;
 }
 
-/* Style the back side */
-.flip-card-back {
-  background: rgba(58, 57, 57, 0.8);
+.container2{
+  background:transparent;
   color: white;
-  transform: rotateY(180deg);
-  box-shadow: 5px 5px 30px #000000;
-  border:1px solid #fff;
-}
-
-.column1 {
-  float: left;
-  width: 40%;
- height:400px;
-}
-
-.column2 {
-  float: right;
-  width: 60%;
-  
-  /*background: rgba(204, 204, 204, 0.7);*/
-  height:400px;
-  overflow:hidden;
-}
-
-
-#overlay{
-  position:absolute;
-  width:33.95%;
-  height:68%;
-  opacity:0;
-  margin-top:65px;
-  margin-left: 42px;
-  background-color: rgba(0,0,0,.6);
-  -webkit-filter:blur(3px);
-  transition: all 0.9s ease-out;
-  -o-transition-transition: all 0.5s ease-out;
-  -webkit-transition: all 0.5s ease-out;
-  -moz-transition: all 0.5s ease-out;
-}
-
-#overlay:hover{
-  opacity: 1;
-  -webkit-filter:blur(0px);
-  transition: all 0.9s ease-out;
-  -o-transition-transition: all 0.5s ease-out;
-  -webkit-transition: all 0.5s ease-out;
-  -moz-transition: all 0.5s ease-out;
-}
-
-.overlay-content {
+  border:none;
+  width:30%;
+  height:auto;
   position: relative;
-  margin-top:30px;
-  margin-left:-20px;
-
+  top: 25%;
+  left: 36%;
+  margin-right: -50%;
+  text-align: center;
+  background-color: rgba(17, 65, 110, 0.6);
+  border:2px double #fff;
+  background-clip: padding-box;
+  box-shadow: 5px 5px 30px #000000;
 }
 
-.overlaylinks {
-  position:relative;
-  margin:0 auto;
-  width:280px;
-  margin-left:-28px;
+#section1{
+  height:100%;
+  background-image:url("../images/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-.overlaylinks a {
-  text-transform:uppercase;
-  letter-spacing:1px;
-  margin:3px;
-  width:auto;
-  padding: 20px;
-  padding-bottom: 1px;
-  text-decoration: none;
-  font-size: 20px;
-  color: #ffffff;
-  display: inline-block; 
-  transition: 0.6s;
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  -ms-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
+#section2{
+  height:100%;
+  background-image: url("../images/homer.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: auto;
 }
 
-.overlaylinks a:hover {
-  color: #96f796
+#section3{
+  height:100%;
+  background-image: url("../images/sakura.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-.overlaylinks ul{
-  list-style:none;
-  margin-left:0px;
-  padding-left:0px;
-}
-
-.overlaylinks li{
-  list-style:none;
-  line-height:40px;
-  margin-left:0px;
-  padding-left:0px;
-}
-
-.overlaylinks:after {
-  display:block;
-  clear:both;
-  content:'';
+#section4{
+  height:100%;
+  background-image: url("../images/cozy.jpg");
+  background-position: 50% 70%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 li.active a, li.active a:hover{
@@ -224,13 +149,19 @@ li.active a, li.active a:hover{
   color:#ff9999;
 }
 
-a {
+a, button{
+  background-color: transparent;
+  border: none;
   position: relative;
   color: #000;
   text-decoration: none;
 }
 
-a:before {
+button:focus{
+  outline: 0 !important;
+}
+
+a:before, button:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -245,32 +176,55 @@ a:before {
   transition: all 0.3s ease-in-out 0s;
 }
 
-a:hover:before {
+a:hover:before, button:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
 
-#particles-js{
-  background-image:linear-gradient(to bottom, #0e1744, #2943c6);
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-  background-position:center;
-  background-attachment: fixed;
+.linkIcon{
+  font-size: 30px;
 }
 
-.tabs {
-  display:inline-block;
+.linkIcon:hover{
+  font-size: 30px;
+  color:inherit;
 }
-.tabformat{
-  margin:0px;
-  padding:20px;
-  line-height:20px;
-  height:365px;
-  width: 420px;
-  overflow: auto;
-  text-align: left;
-  -ms-overflow-style: none;
+
+.linkIcon:hover:before{
+  visibility: hidden;
+}
+
+
+@media only screen and (max-device-width: 1366px){
+  h2{
+    font-size: 30px !important;
+  }
+  p{
+    font-size: 15px;
+  }
+  .about{
+    width:70%;
+  }
+
+}
+
+@media(max-width:992px){
+  h2{
+    font-size: 30px !important;
+  }
+}
+
+@media(max-width:768px){
+  .container2{
+    width: 40%;
+    left:25%;
+  }
+}
+
+@media(max-width:568px){
+  .container2{
+    width: 50%;
+  }
 }
 
