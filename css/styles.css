@@ -58,7 +58,6 @@ h3 {
   padding-top: 12%;
   height: auto;
   width: 50%;
-  overflow: scroll;
   letter-spacing: 1px;
   color: white;
 }
@@ -101,7 +100,7 @@ h3 {
   height:auto;
   position: relative;
   top: 25%;
-  left: 36%;
+  left: 34%;
   margin-right: -50%;
   text-align: center;
   background-color: rgba(17, 65, 110, 0.6);
@@ -218,13 +217,13 @@ a:hover:before, button:hover:before {
 @media(max-width:768px){
   .container2{
     width: 40%;
-    left:25%;
+    left:20%;
   }
 }
 
 @media(max-width:568px){
   .container2{
-    width: 50%;
+    width: 60%;
   }
 }
 
