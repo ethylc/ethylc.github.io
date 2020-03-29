@@ -97,13 +97,13 @@ h3 {
   color: white;
   border:none;
   width:30%;
+  min-width: 300px;
   height:auto;
   position: relative;
-  top: 25%;
+  top: 26%;
   left: 34%;
-  margin-right: -50%;
   text-align: center;
-  background-color: rgba(17, 65, 110, 0.6);
+  background-color: rgba(58, 57, 57, 0.8);
   border:2px double #fff;
   background-clip: padding-box;
   box-shadow: 5px 5px 30px #000000;
@@ -216,14 +216,13 @@ a:hover:before, button:hover:before {
 
 @media(max-width:768px){
   .container2{
-    width: 40%;
-    left:20%;
+    left: 28%;
   }
 }
 
 @media(max-width:568px){
   .container2{
-    width: 60%;
+    left: 20%;
   }
 }
 
