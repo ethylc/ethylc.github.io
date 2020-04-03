@@ -183,6 +183,7 @@ a:hover:before, button:hover:before {
 
 .linkIcon{
   font-size: 30px;
+  transition: ease-in-out 0.3s;
 }
 
 .linkIcon:hover{
@@ -204,6 +205,10 @@ a:hover:before, button:hover:before {
   }
   .about{
     width:70%;
+  }
+
+  .container2{
+    min-width: 200px;
   }
 
 }
