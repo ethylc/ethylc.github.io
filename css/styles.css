@@ -4,7 +4,7 @@ html{
   scroll-behavior: smooth;
 }
 body {
-  font-family:'Helvetica Neue Ultralight','raleway', Arial, sans-serif !important;
+  font-family:'Helvetica Neue Thin','raleway', Arial, sans-serif !important;
   height: 100%;
   margin: 0;
   letter-spacing:1px;
@@ -25,6 +25,7 @@ h2{
   font-size: 55px !important;
   letter-spacing: 15px;
   text-transform: lowercase;
+  font-family:'Helvetica Neue Ultralight';
 }
 
 h3 {
@@ -55,11 +56,20 @@ h3 {
 
 .about{
   margin:auto;
-  padding-top: 12%;
+  padding: 15% 0%;
   height: auto;
   width: 50%;
   letter-spacing: 1px;
   color: white;
+}
+
+.work{
+  margin:auto;
+  padding: 12% 0%;
+  height: auto;
+  width: 70%;
+  letter-spacing: 1px;
+  color: black;
 }
 
 ::-webkit-scrollbar-thumb:vertical {
@@ -81,8 +91,8 @@ h3 {
   width:54%;
   height:auto;
   position: relative;
-  top: 25%;
-  left: 25%;
+  top: 24%;
+  left: 24%;
   margin-right: -50%;
   text-align: center;
   /* transform: translate(-50%, -50%); */
@@ -100,7 +110,7 @@ h3 {
   min-width: 300px;
   height:auto;
   position: relative;
-  top: 26%;
+  top: 24%;
   left: 34%;
   text-align: center;
   background-color: rgba(58, 57, 57, 0.8);
@@ -132,11 +142,12 @@ h3 {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  overflow: auto;
 }
 
 #section4{
   height:100%;
-  background-image: url("../images/cozy.jpg");
+  background-image: url("../images/day.png");
   background-position: 50% 70%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -219,15 +230,28 @@ a:hover:before, button:hover:before {
   }
 }
 
+@media (max-width: 880px) {
+  .work{
+    width:50%;
+  }
+}
+
 @media(max-width:768px){
+  .container1{
+    top:20%;
+  }
   .container2{
     left: 28%;
+    top:20%;
   }
 }
 
 @media(max-width:568px){
   .container2{
     left: 20%;
+  }
+  .work{
+    width: 70%;
   }
 }
 
