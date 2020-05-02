@@ -71,21 +71,60 @@ h3 {
   margin:auto;
   padding: 9% 0%;
   height: auto;
-  width: 70%;
+  width: 72%;
   letter-spacing: 1px;
   color: black;
 }
 
-.max {
-  display: -webkit-box;
-  overflow : hidden;
-  text-overflow: ellipsis;
-  -webkit-line-clamp: 5;
-  -webkit-box-orient: vertical;  
+
+.card .face1{
+  height: 200px;
+  text-align: center;
+  position: relative;
+  justify-content: center;
+  z-index: 1;
+  background: rgba(51, 51, 51, 0.8);
+  color:white;
+  transform: translateY(100px);
+  transition: 0.5s;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border: 1.5px solid #ecc4e3;
+}
+.card:hover .face1{
+  transform: translateY(0px);
+  height: 100px;
+  border-bottom-right-radius: 0px;
+  border-bottom: none;
 }
 
-.max:hover{
-  overflow-y: visible;
+.card .face1 .card-title{
+  padding: 70px 10px;
+  transition: 0.5s;
+}
+
+.card:hover .face1 .card-title{
+  padding: 20px 10px;
+}
+
+.card .face2{
+  height: 150px;
+  opacity: 0;
+  position: relative;
+  transform: translateY(-100px);
+  transition: 0.5s;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 15px;
+  border-bottom-right-radius: 25px;
+  border: 1.5px solid #ecc4e3;
+  border-top: none;
+}
+
+.card:hover .face2{
+  height: 250px;
+  opacity: 1;
+  position: relative;
+  transform: translateY(0px);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -116,7 +155,7 @@ h3 {
   text-align: center;
   /* transform: translate(-50%, -50%); */
   background-color: rgba(58, 57, 57, 0.8);
-  border:2px solid #fff;
+  border: 1.5px solid #fff;
   background-clip: padding-box;
   box-shadow: 5px 5px 30px #000000;
 }
@@ -125,17 +164,26 @@ h3 {
   background:transparent;
   color: white;
   border:none;
-  width:30%;
+  width:35%;
   min-width: 300px;
   height:auto;
   position: relative;
   top: 24%;
-  left: 34%;
+  left: 33%;
   text-align: center;
   background-color: rgba(58, 57, 57, 0.8);
-  border:2px double #fff;
+  border: 1.5px solid #fff;
   background-clip: padding-box;
   box-shadow: 5px 5px 30px #000000;
+}
+
+.work .container1{
+  border: 1.5px solid #ecc4e3;
+  box-shadow: none;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  width: 50%;
+  left: 26%;
 }
 
 #section1{
@@ -227,12 +275,13 @@ a:hover:before, button:hover:before {
 
 .bottom{
   position: absolute;
-  bottom: 20%;
+  bottom: 6%;
+}
+.card-text{
+  height: 170px;
+  overflow-y: auto;
 }
 
-.cont{
-  padding: 25px 0px;
-}
 
 @media only screen and (max-device-width: 1366px){
   h2{
@@ -241,31 +290,33 @@ a:hover:before, button:hover:before {
   p{
     font-size: 15px;
   }
-  .about{
-    width:70%;
-  }
-
   .container2{
     min-width: 200px;
-  }
-
-}
-
-@media(max-width:992px){
-  h2{
-    font-size: 30px !important;
   }
 }
 
 @media (max-width: 992px) {
-  .work{
-    width:70%;
-  }
-  .bottom{
-    bottom: 25%;
+
+  h2{
+    font-size: 30px !important;
   }
   .about{
     text-align: center;
+  }
+  .work .container1 {
+    width: 70%;
+    left: 30%;
+  }
+}
+
+@media (max-width: 1017px) {
+
+  .work .container1 {
+    width: 78%;
+    left: 10.5%;
+  }
+  .work{
+    width:60%;
   }
 }
 
@@ -277,18 +328,16 @@ a:hover:before, button:hover:before {
     left: 28%;
     top:20%;
   }
-
+  .about{
+    width: 70%;
+  }
+  .work{
+    width:70%;
+  }
 }
 
 @media(max-width:568px){
   .container2{
     left: 20%;
   }
-  .bottom{
-    bottom: 20%;
-  }
-  .about{
-    width: 70%;
-  }
 }
-
