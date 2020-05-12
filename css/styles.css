@@ -1,7 +1,7 @@
 html{
   height:100%;
-  overflow: hidden;
   scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
 body {
   font-family:'Helvetica Neue Thin','raleway', Arial, sans-serif !important;
@@ -76,6 +76,10 @@ h3 {
   color: black;
 }
 
+.modal-content img{
+  width: 100%;
+  height: auto;
+}
 
 .card .face1{
   height: 200px;
@@ -192,6 +196,7 @@ h3 {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  scroll-snap-align: start;
 }
 
 #section2{
@@ -200,6 +205,7 @@ h3 {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  scroll-snap-align: start;
   overflow: auto;
 }
 
@@ -209,6 +215,7 @@ h3 {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  scroll-snap-align: start;
   overflow: auto;
 }
 
@@ -219,6 +226,7 @@ h3 {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  scroll-snap-align: start;
 }
 
 li.active a, li.active a:hover{
