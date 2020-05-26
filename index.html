@@ -3,6 +3,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="https://www.pngkit.com/png/full/54-543260_discover-the-coolest-peach-cute.png"/>
 <link rel = "stylesheet" type = "text/css" href = "/css/styles.css" />
 <link rel="stylesheet" href="css/bootstrap.css">
 
@@ -20,7 +21,7 @@ rel='stylesheet' type='text/css' /> -->
     <div class = "container1">
         <div class = "intro">
             <h2>Ethyl Chan</h2>
-            <hr width = "48%;" color = "white">
+            <hr>
                 <nav class = "navbar navbar-dark navbar-expand-lg">
                     <ul class = "nav navbar-nav mx-auto">
                         <li class = "nav-item mr-2 ml-2"><button class = "nav-link" onclick="scrollAbout()">about me</button></li>
@@ -57,33 +58,61 @@ rel='stylesheet' type='text/css' /> -->
     <div class = "work">
         <div class = "card-deck">
             <div class = "card">
+              <div class = "bar"><div class = "card-title"><h4>Chat App</h4></div>
+              <div class="windowbuttons">
+                <div class="dots" style="background:#f2a3a3"></div>
+                <div class="dots" style="background:#ede09b"></div>
+                <div class="dots" style="background:#abcca9"></div>
+              </div></div>
               <div class = "card-body">
-                <div class = "face1"><div class = "card-title"><h4>Messenger Clone</h4><small class = "text-muted">React / Giphy API / Material UI / Firebase</small></div></div>
-                <div class = "face2"><p class = "card-text">This is a clone of the popular Facebook Messenger app. Users can create chats and send text, images and Gifs to other users.</p>
-                    <div class = "bottom"><a class = "btn btn-info" target = "_blank" href = "https://github.com/ethylc/chat-app">View Code</a>
-                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#chatDemo">Demo</button></div></div>
+                <div class = "card-text"><p>A chat app inspired by the Facebook Messenger app, that allows users to create chats with other users and send text, 
+                  images or Gifs to each other.</p>
+                </div>
               </div>
-
+              <div class="card-footer">
+                <div style="text-align: center;"><a class = "click" target = "_blank" href = "https://github.com/ethylc/chat-app">Code</a>
+                    <button type="button" class="click ml-3" data-toggle="modal" data-target="#chatDemo">Demo</button></div>
+                <div class="foot"><small>#React #Giphy-API #Material-UI #Firebase</small></div>
+              </div>
+            </div>
+            <div class="card">
+              <div class = "bar"><div class = "card-title"><h4>Anime Database</h4></div>
+              <div class="windowbuttons">
+                <div class="dots" style="background:#f2a3a3"></div>
+                <div class="dots" style="background:#ede09b"></div>
+                <div class="dots" style="background:#abcca9"></div>
+              </div></div>
+              <div class="card-body">
+                <div class = "card-text"><p>A single page application where users can search for their favourite anime 
+                  or discover new anime that are out this season.</p>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div style="text-align: center;"><a class = "click" target = "_blank" href = "https://github.com/ethylc/anime-database">Code</a>
+                    <button type="button" class="click ml-3" data-toggle="modal" data-target="#animeDemo">Demo</button></div>
+                <div class="foot"><small>#React #AniList-API #GraphQL</small></div>
+              </div>
             </div>
             <div class = "card">
+              <div class = "bar"><div class = "card-title"><h4>Mall Map</h4></div>
+              <div class="windowbuttons">
+                <div class="dots" style="background:#f2a3a3"></div>
+                <div class="dots" style="background:#ede09b"></div>
+                <div class="dots" style="background:#abcca9"></div>
+              </div></div>
               <div class = "card-body">
-                <div class = "face face1"><div class = "card-title"><h4 >Anime Database</h4><small class = "text-muted">React / AniList API / GraphQL</small></div></div>
-                <div class = "face face2"><p class = "card-text">A single page application where users can search for their favourite anime or discover new anime that are out this season.</p>
-                <div class = "bottom"><a class = "btn btn-info" target = "_blank" href = "https://github.com/ethylc/anime-database">View Code</a>
-                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#animeDemo">Demo</button></div></div>
+                <div class = "card-text"><p>App that allows users to choose from a list of malls and displays their stores. 
+                  Two stores can be selected and a path to the store(s) will be displayed on Google maps.</p>
+                </div>
               </div>
-
-            </div>
-            <div class = "card">
-              <div class = "card-body">
-                <div class = "face face1"><div class = "card-title"><h4>Mall Map</h4><small class = "text-muted">Android Studio / SQLite / Google API</small></div></div>
-                <div class = "face face2"><p class = "card-text">App that allows users to choose from a list of malls and displays their stores. Two stores can be selected and a path to the store(s) will be displayed on Google maps.</p>
-                <div class = "bottom"><a class = "btn btn-info" target = "_blank" href = "https://github.com/ethylc/Mall-Map">View Code</a>
-                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#mallDemo">Demo</button></div></div>
+              <div class="card-footer">
+                <div style="text-align: center;"><a class = "click" target = "_blank" href = "https://github.com/ethylc/Mall-Map">Code</a>
+                <button type="button" class="click ml-3" data-toggle="modal" data-target="#mallDemo">Demo</button></div>
+                <div class="foot"><small>#Android-Studio #SQLite #Google-API</small></div>
               </div>
             </div>
           </div>
-          <br>
+          <br><br>
         <div class = "container1">
         <nav class = "navbar navbar-dark navbar-expand-md">
             <ul class = "nav navbar-nav mx-auto">
@@ -124,10 +153,14 @@ rel='stylesheet' type='text/css' /> -->
 <div class="modal fade" id="chatDemo" tabindex="-1" role="dialog" aria-labelledby="chatDemoTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
       <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="chatDemoTitle">Messenger Clone</h5>
+        <div class="bar">
+          <h4 class="modal-title" id="chatDemoTitle">Chat App Demo</h4>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
+            <div class="windowbuttons">
+              <div class="dots" style="background:#f2a3a3"></div>
+              <div class="dots" style="background:#ede09b"></div>
+              <div class="dots" style="background:#abcca9"></div>
+            </div>
           </button>
         </div>
         <img src="/images/chat.gif">
@@ -138,10 +171,14 @@ rel='stylesheet' type='text/css' /> -->
 <div class="modal fade" id="animeDemo" tabindex="-1" role="dialog" aria-labelledby="animeDemoTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
       <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="animeDemoTitle">Anime Database</h5>
+        <div class="bar">
+          <h4 class="modal-title" id="animeDemoTitle">Anime Database Demo</h4>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
+            <div class="windowbuttons">
+              <div class="dots" style="background:#f2a3a3"></div>
+              <div class="dots" style="background:#ede09b"></div>
+              <div class="dots" style="background:#abcca9"></div>
+            </div>
           </button>
         </div>
         <img src="/images/anime.gif">
@@ -152,10 +189,14 @@ rel='stylesheet' type='text/css' /> -->
 <div class="modal fade" id="mallDemo" tabindex="-1" role="dialog" aria-labelledby="mallDemoTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
       <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="mallDemoTitle">Mall Map</h5>
+        <div class="bar">
+          <h4 class="modal-title" id="mallDemoTitle">Mall Map Demo</h4>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
+            <div class="windowbuttons">
+              <div class="dots" style="background:#f2a3a3"></div>
+              <div class="dots" style="background:#ede09b"></div>
+              <div class="dots" style="background:#abcca9"></div>
+            </div>
           </button>
         </div>
         <img src="/images/map.gif">
