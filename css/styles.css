@@ -361,6 +361,10 @@ hr{
   width: 48%;
 }
 
+.nav{
+  align-items: center !important;
+}
+
 button:focus{
   outline: 0 !important;
 }
@@ -437,6 +441,7 @@ a:hover:before, button:hover:before {
 
   h2{
     font-size: 30px !important;
+    text-align: center !important;
   }
   .about{
     text-align: center;
@@ -452,7 +457,6 @@ a:hover:before, button:hover:before {
 }
 
 @media (max-width: 1017px) {
-
   .work .container1 {
     width: 78%;
     left: 10.5%;
