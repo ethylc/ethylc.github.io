@@ -23,7 +23,7 @@ h2{
   text-align: center;
   font-weight: lighter;
   margin-bottom:1%;
-  padding:0px 0px 0px 10px;
+  padding:0px 10px 0px 25px;
   font-size: 55px !important;
   letter-spacing: 15px;
   text-transform: lowercase;
@@ -274,12 +274,12 @@ color: #644141 !important;
   background:inherit;
   color: white;
   border:none;
-  width:35%;
+  width:38%;
   min-width: 300px;
   height:auto;
   position: relative;
   top: 24%;
-  left: 33%;
+  left: 32%;
   text-align: center;
   background-color: rgba(58, 57, 57, 0.8);
   border: 1.5px solid rgb(247, 187, 161);
@@ -445,6 +445,10 @@ a:hover:before, button:hover:before {
     width: 70%;
     left: 30%;
   }
+  .container2{
+    left: 20%;
+    width: 60%;
+  }
 }
 
 @media (max-width: 1017px) {
@@ -462,20 +466,10 @@ a:hover:before, button:hover:before {
   .container1{
     top:20%;
   }
-  .container2{
-    left: 28%;
-    top:20%;
-  }
   .about{
     width: 70%;
   }
   .work{
     width:70%;
-  }
-}
-
-@media(max-width:568px){
-  .container2{
-    left: 20%;
   }
 }
