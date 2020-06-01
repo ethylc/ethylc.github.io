@@ -5,20 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="https://www.pngkit.com/png/full/54-543260_discover-the-coolest-peach-cute.png"/>
 <link rel = "stylesheet" type = "text/css" href = "/css/styles.css" />
-<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" type = "text/css" href="css/bootstrap.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 <script src = "js/smoothScroll.js"></script>
 <script src = "js/bootstrap.js"></script>
-<link rel = "stylesheet" type = "text/css" href = "https://static.parastorage.com/services/third-party/fonts/Helvetica/fontFace.css" />
 
-<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300|Sancreek|Raleway:100'
-rel='stylesheet' type='text/css' /> -->
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 <title>Ethyl Chan</title>
 </head>
 <body>
 
 <div id="section1">
-    <div class = "container1">
+    <div class = "container1" data-aos="zoom-in">
         <div class = "intro">
             <h2>Ethyl Chan</h2>
             <hr>
@@ -36,10 +36,10 @@ rel='stylesheet' type='text/css' /> -->
 
 <div id = "section2">
     <div class = "about">
-        <h2>Hello, I'm Ethyl</h2>
-        <p>I'm 22 years old and recently graduated from Wilfrid Laurier University with a degree in Computer Science.</p>
+        <h2 data-aos="fade-down">Hello, I'm Ethyl</h2>
+        <p data-aos="fade" data-aos-delay="800">I'm 22 years old and recently graduated from Wilfrid Laurier University with a degree in Computer Science.</p>
 
-        <p>I've always had a keen interest in video games, and puzzle solving which was what fueled my interest in programming.
+        <p data-aos="fade" data-aos-delay="1300">I've always had a keen interest in video games, and puzzle solving which was what fueled my interest in programming.
             Other than programming, I also have a passion for graphic design, music, traveling, anime and horror movies.
             I am always eager to learn and experiment with new things. </p>
             <hr width="48%;" color="white">
@@ -57,7 +57,7 @@ rel='stylesheet' type='text/css' /> -->
 <div id = "section3">
     <div class = "work">
         <div class = "card-deck">
-            <div class = "card">
+            <div class = "card" data-aos="fade-up">
               <div class = "bar"><div class = "card-title"><h4>Chat App</h4></div>
               <div class="windowbuttons">
                 <div class="dots" style="background:#f2a3a3"></div>
@@ -75,7 +75,7 @@ rel='stylesheet' type='text/css' /> -->
                 <div class="foot"><small>#React #Giphy-API #Material-UI #Firebase</small></div>
               </div>
             </div>
-            <div class="card">
+            <div class="card" data-aos="fade-up" data-aos-delay="400">
               <div class = "bar"><div class = "card-title"><h4>Anime Database</h4></div>
               <div class="windowbuttons">
                 <div class="dots" style="background:#f2a3a3"></div>
@@ -93,7 +93,7 @@ rel='stylesheet' type='text/css' /> -->
                 <div class="foot"><small>#React #AniList-API #GraphQL</small></div>
               </div>
             </div>
-            <div class = "card">
+            <div class = "card" data-aos="fade-up" data-aos-delay="800" data-aos-offset="-80">
               <div class = "bar"><div class = "card-title"><h4>Mall Map</h4></div>
               <div class="windowbuttons">
                 <div class="dots" style="background:#f2a3a3"></div>
@@ -127,7 +127,7 @@ rel='stylesheet' type='text/css' /> -->
 </div>
 
 <div id = "section4">
-    <div class = "container2">
+    <div class = "container2" data-aos="zoom-out">
         <div class = "contact">
         <p> 
             <a class = "linkIcon" target = "_blank" href = "https://www.linkedin.com/in/ethyl-chan/"><i class = "fa fa-linkedin"></i></a> &nbsp;&nbsp;
@@ -205,7 +205,13 @@ rel='stylesheet' type='text/css' /> -->
 </div>
 
 <link href = "//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel = "stylesheet">
- 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    easing: 'ease-in-sine',
+    duration:800
+  });
+</script>
 
 </body>
 </html>
