@@ -17,3 +17,13 @@ function scrollContact() {
     var elmnt = document.getElementById("section4");
     elmnt.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
 }
+
+$(document).ready(function () {
+    $(window).load(function () {
+        setTimeout(function () {
+            $('.loader').fadeOut(1000);
+            $('.show').show();
+            AOS.refresh();
+        }, 1200)
+    });
+});
