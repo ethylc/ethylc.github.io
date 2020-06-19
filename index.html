@@ -8,6 +8,8 @@
 <link rel="stylesheet" type = "text/css" href="css/bootstrap.css">
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src = "js/smoothScroll.js"></script>
 <script src = "js/bootstrap.js"></script>
 
@@ -15,51 +17,59 @@
 <title>Ethyl Chan</title>
 </head>
 <body>
-  <div class = "loader">
+  <div class = "preloader">
+    <div class="loader"></div>
     <p>LOADING</p>
   </div>
-<div class = "show" style="display:none">
-<div id="section1">
+
+<div class = "showbody" style="display:none">
+  <div class="burger">
+    <span aria-hidden="true"></span>
+  </div>
+  
+  <nav>
+    <ul class="main">
+      <li class="active"><a href="#section1" onclick = "scrollHome()"><sup style="font-size: 13px;letter-spacing: 1px;top: -13px;">01 </sup>Home</a></li>
+      <li><a href="#section2" onclick="scrollAbout()"><sup style="font-size: 13px;letter-spacing: 1px;top: -13px;">02 </sup>About</a></li>
+      <li><a href="#section3" onclick = "scrollWork()"><sup style="font-size: 13px;letter-spacing: 1px;top: -13px;">03 </sup>Portfolio</a></li>
+      <li><a href="#section4" onclick = "scrollContact()"><sup style="font-size: 13px;letter-spacing: 1px;top: -13px;">04 </sup>Contact</a></li>
+    </ul>
+    <hr style="text-align:left;margin-left:40px">
+    <ul class="sub">
+      <li><a href= "/images/Ethyl_resume.pdf" target = "_blank"><i class = "fa fa-paperclip"></i>&nbsp;&nbsp;Resume</a></li>
+      <li><a href = "https://www.linkedin.com/in/ethyl-chan/" target = "_blank"><i class = "fa fa-linkedin"></i>&nbsp;&nbsp;LinkedIn</a></li>
+      <li><a href = "https://github.com/ethylc" target = "_blank"><i class = "fa fa-github"></i>&nbsp;&nbsp;Github</a></li>
+    <ul>    
+  </nav>
+  
+  <div class="overlay"></div>
+<section id="section1">
     <div class = "container1" data-aos="zoom-in">
         <div class = "intro">
             <h2>Ethyl Chan</h2>
             <hr>
-                <nav class = "navbar navbar-dark navbar-expand-md">
-                    <ul class = "nav navbar-nav mx-auto">
-                        <li class = "nav-item mr-2 ml-2"><button class = "nav-link" onclick="scrollAbout()">about me</button></li>
-                        <li class = "nav-item mr-2 ml-2"><a class = "nav-link" href = "/images/Ethyl_resume.pdf" target = "_blank">resume</a></li>
-                        <li class = "nav-item mr-2 ml-2"><button class = "nav-link" onclick = "scrollWork()">portfolio</button></li>
-                        <li class = "nav-item mr-2 ml-2"><button class = "nav-link" onclick = "scrollContact()">contact</button></li>
-                    </ul>
-                </nav>
+                <p>Software Developer</p>
         </div>
     </div>
-</div>
+</section>
 
-<div id = "section2">
+<section id = "section2">
     <div class = "about">
-        <h2 data-aos="fade-down">Hello, I'm Ethyl</h2>
-        <p data-aos="fade" data-aos-delay="700">I'm 22 years old and recently graduated from Wilfrid Laurier University with a degree in Computer Science.</p>
+        <h2 data-aos="fade-down">Hello, I'm <span data-toggle="tooltip" data-placement="top" title="[ e h · t h l ]">Ethyl</span>.</h2>
+        <p data-aos="fade" data-aos-delay="500">I'm 22 years old and recently graduated from Wilfrid Laurier University with a degree in Computer Science.</p>
 
-        <p data-aos="fade" data-aos-delay="1200">I've always had a keen interest in video games, and puzzle solving which was what fueled my interest in programming.
+        <p data-aos="fade" data-aos-delay="1000">I've always had a keen interest in video games, and puzzle solving which was what fueled my interest in programming.
             Other than programming, I also have a passion for graphic design, music, traveling, anime and horror movies.
             I am always eager to learn and experiment with new things. </p>
             <hr width="48%;" color="white">
-            <nav class = "navbar navbar-dark navbar-expand-sm">
-                <ul class = "nav navbar-nav mx-auto">
-                    <li class = "nav-item mr-2 ml-2"><button class = "nav-link" onclick="scrollHome()">home</button></li>
-                    <li class = "nav-item mr-2 ml-2"><a class = "nav-link" href = "/images/Ethyl_resume.pdf" target="_blank">resume</a></li>
-                    <li class = "nav-item mr-2 ml-2"><button class = "nav-link" onclick = "scrollWork()">portfolio</button></li>
-                    <li class = "nav-item mr-2 ml-2"><button class = "nav-link" onclick = "scrollContact()">contact</button></li>
-                </ul>
-            </nav>
+        <h5 data-aos="fade-up" data-aos-delay="1000"><i>“I don't know where I'm going, but I'm on my way.”</i> ― Carl Sandburg</h5>
     </div>
-</div>
+</section>
 
-<div id = "section3">
+<section id = "section3">
     <div class = "work">
         <div class = "card-deck">
-            <div class = "card" data-aos="fade-up">
+            <div class = "card" data-aos="fade-up" id = "card1">
               <div class = "bar"><div class = "card-title"><h4>Chat App</h4></div>
               <div class="windowbuttons">
                 <div class="dots" style="background:#f2a3a3"></div>
@@ -77,7 +87,7 @@
                 <div class="foot"><small>#React #Giphy-API #Material-UI #Firebase</small></div>
               </div>
             </div>
-            <div class="card" data-aos="fade-up" data-aos-delay="400">
+            <div class="card" data-aos="fade-up" data-aos-delay="400" id = "card2" data-aos-anchor="#card1">
               <div class = "bar"><div class = "card-title"><h4>Anime Database</h4></div>
               <div class="windowbuttons">
                 <div class="dots" style="background:#f2a3a3"></div>
@@ -95,7 +105,7 @@
                 <div class="foot"><small>#React #AniList-API #GraphQL</small></div>
               </div>
             </div>
-            <div class = "card" data-aos="fade-up" data-aos-delay="800" data-aos-offset="-80">
+            <div class = "card" data-aos="fade-up" data-aos-delay="800" id = "card3" data-aos-anchor="#card2">
               <div class = "bar"><div class = "card-title"><h4>Mall Map</h4></div>
               <div class="windowbuttons">
                 <div class="dots" style="background:#f2a3a3"></div>
@@ -114,42 +124,25 @@
               </div>
             </div>
           </div>
-          <br><br>
-        <div class = "container1">
-        <nav class = "navbar navbar-dark navbar-expand-md">
-            <ul class = "nav navbar-nav mx-auto">
-                <li class = "nav-item mr-2 ml-2"><button class = "nav-link" onclick = "scrollHome()">home</button></li>
-                <li class = "nav-item mr-2 ml-2"><a class = "nav-link" href = "/images/Ethyl_resume.pdf" target = "_blank">resume</a></li>
-                <li class = "nav-item mr-2 ml-2"><button class = "nav-link" onclick = "scrollAbout()">about</button></li>
-                <li class = "nav-item mr-2 ml-2"><button class = "nav-link" onclick = "scrollContact()">contact</button></li>
-            </ul>
-        </nav>
-        </div>
     </div>
-</div>
+</section>
 
-<div id = "section4">
+<section id = "section4">
     <div class = "container2" data-aos="fade">
-        <div class = "contact">
-        <p data-aos="fade-down" data-aos-delay="500"> 
-            <a class = "linkIcon" target = "_blank" href = "https://www.linkedin.com/in/ethyl-chan/"><i class = "fa fa-linkedin"></i></a> &nbsp;&nbsp;
-            <a class = "linkIcon" target = "_blank" href = "https://github.com/ethylc"><i class = "fa fa-github"></i></a><br><br>
+        <div class = "contact py-4">
+        <p class='pt-3'data-aos="fade-down" data-aos-delay="500"> 
             <i class = "fa fa-phone"></i>  &nbsp; (647)-608-3923<br><br>
             <i class = "fa fa-envelope"></i> &nbsp; ethylchan@yahoo.ca
-
         </p>
         <hr width = "48%;" color = "white">
-        <nav class = "navbar navbar-dark navbar-expand-md" data-aos="fade-up" data-aos-delay="500">
-            <ul class = "nav navbar-nav mx-auto">
-                <li class = "nav-item mr-2 ml-2"><button class = "nav-link" onclick = "scrollHome()">home</button></li>
-                <li class = "nav-item mr-2 ml-2"><button class = "nav-link" onclick = "scrollAbout()">about</button></li>
-                <li class = "nav-item mr-2 ml-2"><a class = "nav-link" href = "/images/Ethyl_resume.pdf" target = "_blank">resume</a></li>
-                <li class = "nav-item mr-2 ml-2"><button class = "nav-link" onclick = "scrollWork()">portfolio</button></li>
-            </ul>
-        </nav>
+        <p class='pt-2' data-aos="fade-up" data-aos-delay="500">
+          <a class = "linkIcon" target = "_blank" href = "https://www.linkedin.com/in/ethyl-chan/" data-toggle="tooltip" data-placement="bottom" title="LinkedIn"><i class = "fa fa-linkedin"></i></a>
+          <a class = "linkIcon" target = "_blank" href = "https://github.com/ethylc" data-toggle="tooltip" data-placement="bottom" title="Github"><i class = "fa fa-github"></i></a>
+          <a class = "linkIcon" target = "_blank" href = "/images/Ethyl_resume.pdf" data-toggle="tooltip" data-placement="bottom" title="Resume"><i class = "fa fa-paperclip"></i></a>
+        </p>
     </div>
     </div>
-</div>
+</section>
 </div>
 
 
