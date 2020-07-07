@@ -19,14 +19,14 @@ function scrollContact() {
 }
 
 $(document).ready(function () {
-    $(window).load(function () {
+    $(window).on("load", function() {
         setTimeout(function () {
-            $('.loader').animate({opacity:'0'})
-            $('.preloader p').delay(500).animate({top:'40%', opacity:'0'})
+            $('.loader').animate({opacity:'0'});
+            $('.preloader p').delay(500).animate({top:'40%', opacity:'0'});
             $('.preloader').delay(900).slideUp(1000);
             $('.showbody').show();
             AOS.refresh();
-        }, 800)
+        }, 800);
     });
 
     $('.burger, .overlay, .main a').click(function(){
@@ -41,7 +41,7 @@ $(document).ready(function () {
     $(".main li").click(function(event) {
         $('li').removeClass('active');
         $(this).addClass('active');
-        event.preventDefault()
+        event.preventDefault();
     });
 
     $(window).on('scroll', function () {
